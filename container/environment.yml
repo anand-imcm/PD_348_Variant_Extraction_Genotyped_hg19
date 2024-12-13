@@ -1,0 +1,11 @@
+name: base
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+- python=3.12
+- pip
+- pip:
+  - pandas
+  - pandas_plink
