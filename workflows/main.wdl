@@ -1,5 +1,7 @@
 version 1.0
 
+import "./tasks/extract_info.wdl" as info
+
 workflow main {
     input {
         File query_samples
@@ -16,5 +18,17 @@ workflow main {
         array_bim:"(Required) PLINK BIM: containing variant information."
         array_fam:"(Required) PLINK FAM: containing sample information."
         neurochip_variants:"(Required) NeuroChip Supplementary spreadsheet containing the variant annotation."
+    }
+    String pipeline_version = "1.0.0"
+    String container_src = "ghcr.io/anand-imcm/PD_348_Variant_Extraction_Genotyped_hg19:~{pipeline_version}"
+    call info.extract {
+        input:
+            query = query_samples,
+            prefix = prefix,
+            bed = array_bed,
+            bim = array_bim,
+            fam = array_fam,
+            nc_xlsx = neurochip_variants,
+            docker = container_src
     }
 }
