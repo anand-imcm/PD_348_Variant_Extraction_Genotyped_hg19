@@ -163,3 +163,5 @@ cython_debug/
 
 notes-comments*.txt
 test/
+cromwell-workflow-logs/
+cromwell-executions/
