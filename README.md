@@ -13,6 +13,8 @@
 
 ## Introdution
 
+This repository contains a Workflow Description Language (WDL) workflow for extracting information about genotyped SNPs from Neurochip array data for a list of sample IDs.
+
 ## Workflow Steps
 
 ## Inputs
@@ -21,10 +23,10 @@
 
 ## Components
 
-- Python packages
+- **Python packages**
   - pandas<=2.2.3
   - pandas-plink<=2.3.1
   - openpyxl<=3.1.5
 
-- Docker image
+- **Container**
   - mambaorg/micromamba:1.5.5
