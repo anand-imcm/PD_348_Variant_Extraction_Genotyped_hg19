@@ -7,5 +7,6 @@ dependencies:
 - python=3.12
 - pip
 - pip:
-  - pandas
-  - pandas_plink
+  - pandas<=2.2.3
+  - pandas-plink<=2.3.1
+  - openpyxl<=3.1.5
