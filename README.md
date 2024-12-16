@@ -20,3 +20,11 @@
 ## Outputs
 
 ## Components
+
+- Python packages
+  - pandas<=2.2.3
+  - pandas-plink<=2.3.1
+  - openpyxl<=3.1.5
+
+- Docker image
+  - mambaorg/micromamba:1.5.5
