@@ -1,0 +1,7 @@
+notes-comments*.txt
+test/
+cromwell-workflow-logs/
+cromwell-executions/
+__pycache__/
+*.pyc
+*.md
