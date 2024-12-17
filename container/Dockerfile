@@ -1,4 +1,4 @@
-FROM mambaorg/micromamba:1.5.5
+FROM mambaorg/micromamba:2.0.4
 
 COPY --chown=$MAMBA_USER:$MAMBA_USER ./container/environment.yml /tmp/
 
