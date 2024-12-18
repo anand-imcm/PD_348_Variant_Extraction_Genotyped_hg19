@@ -7,6 +7,9 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/anand-imcm/pd_348_variant_extraction_genotyped_hg19/build.yml)&nbsp;&nbsp;
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/anand-imcm/pd_348_variant_extraction_genotyped_hg19)&nbsp;&nbsp;
 
+> [!TIP]
+> To import the workflow into your Terra workspace, click on the above Dockstore badge, and select 'Terra' from the 'Launch with' widget on the Dockstore workflow page.
+
 ## Introdution
 
 This repository contains a Workflow Description Language (WDL) workflow for extracting information about genotyped SNPs from Neurochip array data for a list of sample IDs.
