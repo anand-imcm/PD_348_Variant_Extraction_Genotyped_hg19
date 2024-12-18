@@ -14,9 +14,20 @@ task extract {
     }
     Int disk_size_gb = ceil(size([bed,bim,fam,nc_xlsx], "GiB")) + 2
     command <<<
-    echo ~{disk_size_gb}
-        ls -ltrh
+        set -euo pipefail
+        python /scripts/pd_variants_annotator.py \
+            --bed ~{bed} \
+            --bim ~{bim} \
+            --fam ~{fam} \
+            --neurochip ~{nc_xlsx} \
+            --query ~{query} \
+            --prefix ~{prefix}
+        tar -czvf "~{prefix}_result.csv.tar.gz" *.csv
     >>>
+    output {
+        File csv = prefix + "_result.csv.tar.gz"
+        File xlsx = prefix + "_extracted_genotyped_snps.xlsx"
+    }
     runtime {
         docker: "~{docker}"
         cpu: "~{cpu}"
