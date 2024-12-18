@@ -1,0 +1,11 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+    primaryDescriptorPath: /workflows/main.wdl
+    readMePath: /README.md
+    authors:
+      - name: Anand Maurya
+        email: anand.maurya@well.ox.ac.uk
+      - name: Avigail Taylor
+        email: avigail.taylor@well.ox.ac.uk
+    topic: A workflow to extract information about genotyped SNPs from Neurochip array data.
