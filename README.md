@@ -3,7 +3,7 @@
 > [!WARNING]
 > This project is still under development.
 
-[![Open](https://img.shields.io/badge/Open-Dockstore-blue)](https://dockstore.org/workflows/github.com/anand-imcm/pd_348_variant_extraction_genotyped_hg19:main?tab=info)&nbsp;&nbsp;
+[![Open](https://img.shields.io/badge/Open-Dockstore-blue)](https://dockstore.org/workflows/github.com/anand-imcm/pd_348_variant_extraction_genotyped_hg19)&nbsp;&nbsp;
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/anand-imcm/pd_348_variant_extraction_genotyped_hg19/build.yml)&nbsp;&nbsp;
 ![GitHub release (with filter)](https://img.shields.io/github/v/release/anand-imcm/pd_348_variant_extraction_genotyped_hg19)&nbsp;&nbsp;
 
