@@ -20,7 +20,7 @@ workflow main {
         neurochip_variants:"(Required) NeuroChip Supplementary spreadsheet containing the variant annotation."
     }
     String pipeline_version = "1.0.0"
-    String container_src = "ghcr.io/anand-imcm/PD_348_Variant_Extraction_Genotyped_hg19:~{pipeline_version}"
+    String container_src = "ghcr.io/anand-imcm/pd_348_variant_extraction_genotyped_hg19:~{pipeline_version}"
     call info.extract {
         input:
             query = query_samples,
@@ -30,5 +30,9 @@ workflow main {
             fam = array_fam,
             nc_xlsx = neurochip_variants,
             docker = container_src
+    }
+    output {
+        File csv_results = extract.csv
+        File report = extract.xlsx
     }
 }
